@@ -1,6 +1,6 @@
 /*
 ************************************************************************************************
-* Version:        0.3 BETA (version history at the bottom of this script)                      *
+* Version:        1.2 BETA (Version History at the bottom of this script)                           *
 * AutoHotkey Version: 1.1                                                                      *
 * Language:       English                                                                      *
 * Platform:       Windows 7, 8                                                                 *
@@ -37,17 +37,16 @@ Menu, Tray, Icon, AMC.ico
 
 /*
 ************************************************************************************************
-AltMediaControl known issues:
- - When a Windows Explorer window is active, and "Autohotkey" is the title of that window,
-   the Media_Play_Pause command doesn't work. Seems to be a bug in AHK, not this script.
+AltMediaControl Known Issues:
+ - When a Windows Explorer window is active, and an icon is selected, the Media_Play_Pause
+   command doesn't work. Seems to be a bug in AHK, not this script. Noticed in Windows 8.1
+   Enterprise x64.
    
 
-TO DO:
- - Compress .psd
- - Compile
-
-
-AltMediaControl version history:
+AltMediaControl Version History:
+1.2 - 
+1.1 - Updated Known Issues.
+1.0 - Compiled executable. Made a new, more efficient "AMC icon.psd".
 0.3 - Updated documentation. Found a bug in Media_Play_Pause command.
 0.2 - Created AMC.ico.
 0.1 - Created the shortcuts.
