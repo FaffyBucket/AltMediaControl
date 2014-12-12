@@ -1,6 +1,6 @@
 /*
 ************************************************************************************************
-* Version:        0.3 BETA (version history at the bottom of this script)                      *
+* Version:        0.4 BETA (version history at the bottom of this script)                      *
 * AutoHotkey Version: 1.1                                                                      *
 * Language:       English                                                                      *
 * Platform:       Windows 7, 8                                                                 *
@@ -40,6 +40,11 @@ Menu, Tray, Icon, AMC.ico
 AltMediaControl known issues:
  - When a Windows Explorer window is active, and "Autohotkey" is the title of that window,
    the Media_Play_Pause command doesn't work. Seems to be a bug in AHK, not this script.
+   
+
+TO DO:
+ - Compress .psd
+ - Compile
 
 
 AltMediaControl version history:
