@@ -1,10 +1,12 @@
 /*
 ************************************************************************************************
-* Version:        1.2 (Version History at the bottom of this script)                           *
-* AutoHotkey Version: 1.1                                                                      *
-* Language:       English                                                                      *
-* Platform:       Windows 7, 8                                                                 *
-* Author:         www.twitter.com/matthiew                                                     *
+* AltMediaControl                                                                              *
+*                                                                                              *
+* Version:              1.3 (Version History at the bottom of this script)                     *
+* AutoHotkey Version:   1.1                                                                    *
+* Language:             English                                                                *
+* Platform:             Windows 7, 8                                                           *
+* Author:               www.twitter.com/matthiew                                               *
 *                                                                                              *
 * Script Function:                                                                             *
 * Creates keyboard shortucts for media playback control in Windows.                            *
@@ -26,7 +28,16 @@ Menu, Tray, Icon, AMC.ico
 
 !.::Media_Next
 !,::Media_Prev
-!/::Media_Play_Pause
+!/::
+    IfWinActive, ahk_exe explorer.exe
+    {
+        Run MediaPlayPause.ahk
+    }
+    else
+    {
+        Send {Media_Play_Pause}
+    }
+    return
 
 !=::Volume_Up
 !-::Volume_Down
@@ -38,13 +49,16 @@ Menu, Tray, Icon, AMC.ico
 /*
 ************************************************************************************************
 AltMediaControl Known Issues:
- - When a Windows Explorer window is active, and an icon is selected, the Media_Play_Pause
+1. When a Windows Explorer window is active, and an icon is selected, the Media_Play_Pause
    command doesn't work. Seems to be a bug in AHK, not this script. Noticed in Windows 8.1
    Enterprise x64.
- - Media_Next, Media_Prev, and Media_Play_Pause don't work at all in on my laptop.
    
+TO DO:
+ - Compile MediaPlayPause.ahk and recompile AltMediaControl.ahk.
+
 
 AltMediaControl Version History:
+1.3 - Created a workaround for Known Issue 1.
 1.2 - New Known Issue.
 1.1 - Updated Known Issues.
 1.0 - Compiled executable. Made a new, more efficient "AMC icon.psd".
