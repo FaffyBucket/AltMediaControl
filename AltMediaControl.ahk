@@ -1,6 +1,6 @@
 /*
 ************************************************************************************************
-* Version:        1.1 BETA (Version History at the bottom of this script)                           *
+* Version:        1.2 (Version History at the bottom of this script)                           *
 * AutoHotkey Version: 1.1                                                                      *
 * Language:       English                                                                      *
 * Platform:       Windows 7, 8                                                                 *
@@ -41,9 +41,11 @@ AltMediaControl Known Issues:
  - When a Windows Explorer window is active, and an icon is selected, the Media_Play_Pause
    command doesn't work. Seems to be a bug in AHK, not this script. Noticed in Windows 8.1
    Enterprise x64.
+ - Media_Next, Media_Prev, and Media_Play_Pause don't work at all in on my laptop.
    
 
 AltMediaControl Version History:
+1.2 - New Known Issue.
 1.1 - Updated Known Issues.
 1.0 - Compiled executable. Made a new, more efficient "AMC icon.psd".
 0.3 - Updated documentation. Found a bug in Media_Play_Pause command.
