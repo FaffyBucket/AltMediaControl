@@ -55,6 +55,7 @@ AltMediaControl Known Issues:
    
 TO DO:
  - Compile MediaPlayPause.ahk and recompile AltMediaControl.ahk.
+ - Add MusicBee controls.
 
 
 AltMediaControl Version History:
