@@ -48,3 +48,15 @@ MediaPlayPause Version History:
 1.0 - Created MediaPlayPause.ahk.
 ************************************************************************************************
 */
+
+
+
+
+;Below are the Script Compiler (Ahk2Exe) Directives.
+
+;@Ahk2Exe-SetName MediaPlayPause
+;@Ahk2Exe-SetDescription MediaPlayPause
+;@Ahk2Exe-SetVersion 1.1
+;@Ahk2Exe-SetCopyright © Matthew Jamie Athio Marks. All rights reserved.
+;@Ahk2Exe-SetOrigFilename MediaPlayPause.exe
+;@Ahk2Exe-SetCompanyName FaffyBucket

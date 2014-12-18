@@ -62,7 +62,7 @@ TO DO:
 
 
 AltMediaControl Version History:
-1.4 - Compiled MediaPlayPause.ahk.
+1.4 - Compiled MediaPlayPause.ahk and replaced it with MediaPlayPause.exe.
     - Updated documentation.
     - Recompiled AltMediaControl.ahk.
 1.3 - Created a workaround for Known Issue 1.
