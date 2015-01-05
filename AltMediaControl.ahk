@@ -29,6 +29,7 @@ Menu, Tray, Icon, AMC.ico
 !.::Media_Next    ; Assigns "Media_Next" to "Alt"+".".
 !,::Media_Prev    ; Assigns "Media_Prev" to "Alt"+",".
 !/::    		  ; Assigns "Media_Play_Pause" to "Alt"+"/".
+    ; Bypasses the function of Media_Play_Pause in Explorer when a file is selected.
     IfWinActive, ahk_exe explorer.exe
     {
         ;Run MediaPlayPause.exe
@@ -50,18 +51,26 @@ Menu, Tray, Icon, AMC.ico
 /*
 ************************************************************************************************
 AltMediaControl Known Issues:
-1. When a Windows Explorer window is active, and an icon is selected, the Media_Play_Pause
-   command doesn't work. Seems to be a bug in AHK, not this script. Noticed in Windows 8.1
-   Enterprise x64 with AHK v1.1.16.05.
+1. Solved. See Version History (1.5) for details.
 2. MediaPlayPause.exe is noticeably slower than MediaPlayPause.ahk. AltMediaControl.exe will
    point to MediaPlayPause.exe, and AltMediaControl.ahk will point to AltMediaControl.exe.
 
 
 TO DO:
- - 
+ - Try "Portability of AutoHotkey.exe" as an alternative to compiling MediaPlayPause.
+ - Update PlayMediaPause to reflect solved Known Iissue #1.
+ - Update documentation and README.md.
+ - Update Keymap.
 
 
 AltMediaControl Version History:
+1.5 - Solved Known Issue #1:
+       - "When a Windows Explorer window is active, and an icon is selected, the
+         Media_Play_Pause command doesn't work. Seems to be a bug in AHK, not this script.
+         Noticed in Windows 8.1 and Windows 7 with AHK v1.1.16.05."
+       - Turns out it's a function of Media_Play_Pause. When Explorer is
+         the active window it will try to open the selected media file. If the file selected
+         is not a media file, it does nothing.
 1.4 - Compiled MediaPlayPause.ahk.
     - Updated documentation.
     - Recompiled AltMediaControl.ahk.

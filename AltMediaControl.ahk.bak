@@ -32,7 +32,8 @@ Menu, Tray, Icon, AMC.ico
     IfWinActive, ahk_exe explorer.exe
     {
         ;Run MediaPlayPause.exe
-        Run MediaPlayPause.ahk
+        ;Run MediaPlayPause.ahk
+        Send {Media_Play_Pause}
     }
     else
     {
@@ -62,7 +63,7 @@ TO DO:
 
 
 AltMediaControl Version History:
-1.4 - Compiled MediaPlayPause.ahk and replaced it with MediaPlayPause.exe.
+1.4 - Compiled MediaPlayPause.ahk.
     - Updated documentation.
     - Recompiled AltMediaControl.ahk.
 1.3 - Created a workaround for Known Issue 1.
