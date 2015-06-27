@@ -2,7 +2,7 @@
 ************************************************************************************************
 * AltMediaControl                                                                              *
 *                                                                                              *
-* Version:              1.5 (Version History at the bottom of this script)                     *
+* Version:              1.6 (Version History at the bottom of this script)                     *
 * AutoHotkey Version:   1.1                                                                    *
 * Language:             English                                                                *
 * Platform:             Windows 7, 8                                                           *
