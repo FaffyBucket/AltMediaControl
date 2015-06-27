@@ -2,7 +2,7 @@
 ************************************************************************************************
 * AltMediaControl                                                                              *
 *                                                                                              *
-* Version:              1.4 (Version History at the bottom of this script)                     *
+* Version:              1.5 (Version History at the bottom of this script)                     *
 * AutoHotkey Version:   1.1                                                                    *
 * Language:             English                                                                *
 * Platform:             Windows 7, 8                                                           *
@@ -53,7 +53,7 @@ Menu, Tray, Icon, AMC.ico
 AltMediaControl Known Issues:
 1. Solved. See Version History (1.5) for details.
 2. MediaPlayPause.exe is noticeably slower than MediaPlayPause.ahk. AltMediaControl.exe will
-   point to MediaPlayPause.exe, and AltMediaControl.ahk will point to AltMediaControl.exe.
+   point to MediaPlayPause.exe, and AltMediaControl.ahk will point to AltMediaControl.ahk.
 
 
 TO DO:
@@ -64,6 +64,7 @@ TO DO:
 
 
 AltMediaControl Version History:
+1.6 - Corrected an error in the documentation.
 1.5 - Solved Known Issue #1:
        - "When a Windows Explorer window is active, and an icon is selected, the
          Media_Play_Pause command doesn't work. Seems to be a bug in AHK, not this script.
