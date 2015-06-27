@@ -2,7 +2,7 @@
 ************************************************************************************************
 * AltMediaControl                                                                              *
 *                                                                                              *
-* Version:              1.5 (Version History at the bottom of this script)                     *
+* Version:              1.7 (Version History at the bottom of this script)                     *
 * AutoHotkey Version:   1.1                                                                    *
 * Language:             English                                                                *
 * Platform:             Windows 7, 8                                                           *
@@ -64,6 +64,7 @@ TO DO:
 
 
 AltMediaControl Version History:
+1.7 - Stable release.
 1.6 - Corrected an error in the documentation.
 1.5 - Solved Known Issue #1:
        - "When a Windows Explorer window is active, and an icon is selected, the
